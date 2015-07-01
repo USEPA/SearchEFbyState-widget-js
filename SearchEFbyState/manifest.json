@@ -1,0 +1,22 @@
+{
+  "name": "SearchEFbyState",
+  "platform": "HTML",
+  "version": "1.1",
+  "wabVersion": "1.1",
+  "author": "Esri R&D Center Beijing",
+  "description": "Search Envirofacts facilities by State",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+   "properties": {
+   "inPanel":true,
+    "hasLocale":true,
+    "hasStyle":true,
+    "hasConfig":false,
+    "hasUIFile":true,
+    "hasSettingPage":false,
+    "hasSettingUIFile":false,
+    "hasSettingLocale":false,
+    "hasSettingStyle":false,
+    "IsController":false
+  }
+}
