@@ -18,7 +18,21 @@ function(declare, BaseWidget,EFdownload,_config) {
 
     postCreate: function() {
       this.inherited(arguments);
-      console.log('postCreate');
+	 	  
+      var pgm = "";
+	  var stateabbr = "";
+      if (this.appConfig.state) stateabbr = this.appConfig.state;
+      if (stateabbr.length > 0) {
+        this.stNode.value = stateabbr;        
+      }
+	  if (this.appConfig.program) pgm = this.appConfig.program;
+      if (pgm.length > 0) {
+        this.pgmNode.value = pgm;        
+      }
+	  if (stateabbr.length > 0 && pgm.length > 0) {
+		this._drawEFxml();
+	  }	  	  
+	  
     },
 
    startup: function() {
